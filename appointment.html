@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appoint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="Logo"><a href="index.html">Kareem <span>Abdul & Jabber</a></span></h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="adminlogin.php">Admin</a></li>
+            </ul>
+            <button class="nav_btn" type="button">Contact</button>
+        </nav>
+    </div>
+     
+    <form action="register.php" method="POST">
+        <div class="boxx">
+        <table>
+          <tr>
+            <td>Name:</td>
+            <td><input type="text" name="username" required /></td>
+          </tr>
+          <tr>
+            <td>Phone:</td>
+            <td><input type="tel" name="phone" required /></td>
+          </tr>
+          <tr>
+            <td>Case</td>
+            <td>
+                <input type="radio" name="services" value="Criminal law" />Criminal Law
+                <input type="radio" name="services" value="Family law" />Family Law
+                <input type="radio" name="services" value="Intellectual Property" />Intellectual Property
+            </td>
+             
+          </tr>
+          
+          <tr>
+            <td>Appointment Date:</td>
+            <td><input type="date" name="date" required /></td>
+          </tr>
+          <tr>
+            <td>Lawyers</td>
+            <td>
+              <input type="radio" name="lawyer" value="Saul Goodman" />Saul Goodman
+              <input type="radio" name="lawyer" value="Matt Murdock" />Matt Murdock
+              <input type="radio" name="lawyer" value="Kim Wexler" />Kim Wexler
+              <input type="radio" name="lawyer" value="Jackie Chilles" />Jackie Chilles
+              <input type="radio" name="lawyer" value="Vincent Gambini" />Vincent Gambini
+              <input type="radio" name="lawyer" value="Camille Vasquez" />Camille Vasquez
+            </td>
+          </tr>
+          <tr>
+            
+          </tr>
+        </table>
+        <td><button class="submit">Submit</button></td>
+      </div>
+      </form>
+    </div>
+    
+</body>
+</html>
